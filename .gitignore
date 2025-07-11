@@ -1,0 +1,5 @@
+.env
+demo.db
+__pycache__/
+*.pyc
+text_to_sql
