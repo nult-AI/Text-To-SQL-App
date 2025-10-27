@@ -1,6 +1,8 @@
 fastapi
 uvicorn
 sqlalchemy
-openai
+#openai
+# su dung goolge thì comment openai
+google-genai
 pydantic
 python-dotenv

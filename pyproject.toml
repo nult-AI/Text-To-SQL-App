@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "text-to-sql-app"
+version = "0.1.0"
+description = ""
+authors = [
+    "NhatLe <nult2003@gmail.com>"
+]
+
+packages = [
+    { include = "app" }
+]
+readme = "README.md"
+#python = ">=3.11"
+
+
+[tool.poetry.dependencies]
+python = ">=3.11" # Cần được định nghĩa lại ở đây
+
+# KHẮC PHỤC LỖI: 'list' object has no attribute 'keys'
+# Tên gói = "Phiên bản"
+fastapi = ">=0.120.0,<0.121.0"
+uvicorn = ">=0.38.0,<0.39.0"
+sqlalchemy = ">=2.0.44,<3.0.0"
+"google-genai" = ">=1.46.0,<2.0.0"
+pydantic = ">=2.12.3,<3.0.0"
+"python-dotenv" = ">=1.2.1,<2.0.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
